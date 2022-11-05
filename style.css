@@ -1,0 +1,82 @@
+:root {
+    --gunmetal-dark: #2E323F;
+    --gunmetal-medium: #3B4050; 
+    --gunmetal-light: #6F737F;
+    --white: #fff;
+    --grullo: #A59678;
+
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-heading: 'Oswald', sans-serif;
+
+    --size-100: 0.25rem;
+    --size-200: 0.5rem;
+    --size-300: 0.75rem;
+    --size-400: 1rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+body {
+    font-family: var(--ff-primary);
+    line-height: 1.5;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    background: var(--gunmetal-dark);
+    padding: 1em 0;
+}
+
+.nav__item {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.nav__item a {
+    font-size: var(--size-400);
+    color: var(--white);
+    font-family: var(--ff-heading);
+    opacity: 0.8;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__item--heihlight a {
+    padding: 0.3em 1em;
+    background: var(--grullo);
+    border-radius: 15px;
+}
+
+@media (min-width: 1000px) {
+    .nav__list {
+        display: flex;
+    }
+}
